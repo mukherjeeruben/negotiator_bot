@@ -5,5 +5,7 @@ then
   PORT=5005
 fi
 
-rasa run --enable-api --port $PORT
+rasa run --enable-api --port $PORT --cors="*"
+
+
 
