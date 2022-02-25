@@ -6,6 +6,7 @@ then
 fi
 
 rasa run --enable-api --port $PORT --cors="*"
+web: python -m http.server
 
 
 
