@@ -1,0 +1,38 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt1877830%2F&psig=AOvVaw2DL4oQE2v4Yo1djkCtmd-1&ust=1645903967907000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNCy16XMm_YCFQAAAAAdAAAAABAD"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_information:
+    - text: "Here is something to cheer you up:"
+      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt1877830%2F&psig=AOvVaw2DL4oQE2v4Yo1djkCtmd-1&ust=1645903967907000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNCy16XMm_YCFQAAAAAdAAAAABAD"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
