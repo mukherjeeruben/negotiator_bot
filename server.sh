@@ -5,7 +5,7 @@ then
   PORT=5005
 fi
 
-rasa run --enable-api --port $PORT --cors="*"
+rasa run --credentials ./credentials.yml --enable-api --port $PORT --cors="*"
 
 
 
